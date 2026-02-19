@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Casamento Lavanda e Sálvia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // Updated palette: Sage Green & Soft Lavender
+                        "primary": "#B2AC88", // Sage Green
+                        "primary-dark": "#8F8A6D", // Darker Sage for hover/text
+                        "secondary": "#BDB0D0", // Slightly deeper lavender for visibility on light backgrounds
+                        "secondary-light": "#E6E6FA", // Soft Lavender
+                        "accent": "#6A5ACD", // Deep Purple Accent
+                        "text-main": "#4A4A4A", // Dark Grey
+                        "text-muted": "#6B6B6B",
+                        "background-light": "#F9F9F7", // Cream/Off-white
+                        "background-dark": "#2a282b", 
+                        "surface-light": "#ffffff",
+                        "surface-variant": "#F0F0EB", // Warmer variant matching sage
+                        "on-surface-variant": "#5e5b58",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "1.75rem", // M3 Large (28px)
+                        "full": "9999px",
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-[#e8e6e3] min-h-screen">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/20 px-4 md:px-8 py-3">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-xl text-white shadow-sm">
+<span class="material-symbols-outlined block">favorite</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-text-main dark:text-primary">Organizador de Casamento</h1>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-[#353336] border border-surface-variant/50 rounded-full py-1.5 pl-4 pr-1.5 shadow-sm">
+<span class="text-sm font-semibold text-accent dark:text-secondary">Sarah &amp; James</span>
+<img alt="Sarah &amp; James" class="size-8 rounded-full object-cover border border-secondary/20" data-alt="Happy engaged couple portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyxQKan38sG1qJMzG892NzXEHvPdqkXUOGxcgurBKkDtb0FV5kGjORey793ucWDNySdWOxk5W0vkAzqjvbAXJppZyfpU5cYXqaWpEfkwwJT_WqQ1DTfbFl0biIyLeQ8mhBGQsH2c2clRuhcG1TzgbMsYGTTXpCVaSvuB9jFKInPnHPaCy-CX-Q9u4PHyVyIYDi-qg9AasKul8yNALIfVE9wkPXSVKhwlkigIZ7iTmD6JG62uxApvsVz9LJWRbEH6ajgIoRIfrelJcB"/>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto p-4 md:p-8 space-y-8">
+<section class="relative overflow-hidden rounded-xl h-[400px] flex items-center justify-center text-white text-center shadow-lg shadow-primary/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform hover:scale-105 duration-700" data-alt="Beautiful outdoor wedding venue setup in Italy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQU_VNjAm6KWsfP4miE0mJPoteeISbwcGMxmF3b1TKblHtmGW5jVxmHWesg-nXI2cjAYr5Jk9NoX3wIlmhFr0DijZa9b7mxW3Qbe8UMpcAfhPY5mCrHceiovF6C8EI1_tYvasIdnvt98F0EiT3VtBkugiSEq4xv1gefQ1HtxCJ9vylVASHGFaa9Tnv8bDId8GgxxjPomujF-N0bdoS6mjX7nkV1KDsIyanmufYE6evgwW8e-qOqpajoJi343MV8YqbE4DLD9AkVWVy');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary/40 to-black/30"></div>
+<div class="relative z-10 px-6 space-y-4">
+<div class="inline-block px-4 py-1.5 bg-secondary-light/20 backdrop-blur-md border border-white/30 rounded-full text-sm font-medium">
+                    Contagem Regressiva
+                </div>
+<h2 class="text-5xl md:text-7xl font-black tracking-tighter drop-shadow-sm text-secondary-light">Faltam 185 Dias</h2>
+<div class="space-y-1">
+<p class="text-lg md:text-xl font-medium opacity-90 text-white">Villa Serenity, Itália</p>
+<p class="text-sm md:text-base font-light tracking-widest uppercase text-white/80">24 de Junho, 2025</p>
+</div>
+<button class="mt-6 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-primary/30 border border-white/10">
+                    Ver Detalhes do Local
+                </button>
+</div>
+</section>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-lg hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+                Adicionar Despesa
+            </button>
+<button class="flex items-center gap-2 bg-secondary-light hover:bg-secondary/30 text-accent dark:text-secondary dark:bg-secondary/20 px-6 py-3 rounded-full font-bold border border-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+                Novo Convidado
+            </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-surface-light dark:bg-[#302e31] p-8 rounded-xl border border-primary/20 shadow-sm flex flex-col items-center">
+<div class="w-full flex justify-between items-center mb-6">
+<h3 class="text-lg font-bold text-text-main dark:text-primary">Lista de Convidados</h3>
+<span class="material-symbols-outlined text-secondary">groups</span>
+</div>
+<div class="relative size-48 flex items-center justify-center mb-6">
+<svg class="size-full transform -rotate-90">
+<circle class="text-surface-variant" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-secondary rounded-full" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="240" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-4xl font-black text-text-main dark:text-white">85</span>
+<span class="text-xs uppercase tracking-tighter opacity-60 text-text-muted">RSVPs Recebidos</span>
+</div>
+</div>
+<div class="w-full grid grid-cols-2 gap-4 mt-auto">
+<div class="bg-background-light dark:bg-[#3d3a3d] p-4 rounded-xl text-center">
+<p class="text-2xl font-bold text-text-main dark:text-primary">150</p>
+<p class="text-xs opacity-60 text-text-muted">Total</p>
+</div>
+<div class="bg-secondary-light dark:bg-secondary/20 p-4 rounded-xl text-center">
+<p class="text-2xl font-bold text-accent dark:text-secondary">85</p>
+<p class="text-xs text-accent dark:text-secondary font-medium">Confirmados</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 bg-surface-light dark:bg-[#302e31] p-8 rounded-xl border border-primary/20 shadow-sm">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="text-lg font-bold text-text-main dark:text-primary">Gestão de Orçamento</h3>
+<p class="text-sm opacity-60 text-text-muted">Controle financeiro em tempo real</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-bold text-primary">$15,000</p>
+<p class="text-xs opacity-60 text-text-muted">de $30,000 investidos</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-medium">
+<span class="text-accent dark:text-secondary">Progresso do Gasto</span>
+<span class="text-text-main dark:text-white">50%</span>
+</div>
+<div class="h-4 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-light to-primary rounded-full" style="width: 50%"></div>
+</div>
+</div>
+<div class="space-y-4 pt-4">
+<h4 class="text-sm font-bold uppercase tracking-widest opacity-60 text-text-muted">Despesas Recentes</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-[#3d3a3d] rounded-xl border border-transparent hover:border-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+<div>
+<p class="text-sm font-bold leading-none text-text-main dark:text-white">Catering</p>
+<p class="text-xs opacity-60 text-text-muted">$8,500</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-[#3d3a3d] rounded-xl border border-transparent hover:border-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">apartment</span>
+<div>
+<p class="text-sm font-bold leading-none text-text-main dark:text-white">Venue</p>
+<p class="text-xs opacity-60 text-text-muted">$5,000</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-[#3d3a3d] rounded-xl border border-transparent hover:border-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">apparel</span>
+<div>
+<p class="text-sm font-bold leading-none text-text-main dark:text-white">Dress</p>
+<p class="text-xs opacity-60 text-text-muted">$1,500</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="bg-surface-light dark:bg-[#302e31] rounded-xl border border-primary/20 shadow-sm overflow-hidden">
+<div class="p-6 md:p-8 border-b border-surface-variant flex flex-col md:flex-row md:items-center justify-between gap-4">
+<h3 class="text-lg font-bold text-text-main dark:text-primary">Fornecedores Parceiros</h3>
+<div class="flex gap-2">
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors text-text-muted dark:text-white">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors text-text-muted dark:text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-background-light dark:bg-background-dark/30">
+<th class="px-8 py-4 text-sm font-semibold opacity-60 text-text-main dark:text-white">Fornecedor</th>
+<th class="px-8 py-4 text-sm font-semibold opacity-60 text-text-main dark:text-white">Categoria</th>
+<th class="px-8 py-4 text-sm font-semibold opacity-60 text-center text-text-main dark:text-white">Status</th>
+<th class="px-8 py-4 text-sm font-semibold opacity-60 text-right text-text-main dark:text-white">Pagamento</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant">
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-8 py-5 flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center text-primary-dark font-bold">A</div>
+<span class="font-medium text-text-main dark:text-white">Amore Photography</span>
+</td>
+<td class="px-8 py-5 text-sm opacity-80 text-text-muted">Fotografia</td>
+<td class="px-8 py-5 text-center">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-secondary-light text-accent border border-secondary/30">Pago Integral</span>
+</td>
+<td class="px-8 py-5 text-right font-mono font-medium text-text-main dark:text-white">$3,200</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-8 py-5 flex items-center gap-4">
+<div class="size-10 rounded-full bg-secondary-light flex items-center justify-center text-accent font-bold">S</div>
+<span class="font-medium text-text-main dark:text-white">Serenity Catering Co.</span>
+</td>
+<td class="px-8 py-5 text-sm opacity-80 text-text-muted">Buffet</td>
+<td class="px-8 py-5 text-center">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary-dark border border-primary/20">Contrato Assinado</span>
+</td>
+<td class="px-8 py-5 text-right font-mono font-medium text-text-main dark:text-white">$8,500</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-8 py-5 flex items-center gap-4">
+<div class="size-10 rounded-full bg-accent/10 flex items-center justify-center text-accent dark:text-secondary font-bold">V</div>
+<span class="font-medium text-text-main dark:text-white">Villa Serenity</span>
+</td>
+<td class="px-8 py-5 text-sm opacity-80 text-text-muted">Espaço</td>
+<td class="px-8 py-5 text-center">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-secondary-light text-accent border border-secondary/30">Pago Integral</span>
+</td>
+<td class="px-8 py-5 text-right font-mono font-medium text-text-main dark:text-white">$5,000</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-8 py-5 flex items-center gap-4">
+<div class="size-10 rounded-full bg-gray-500/20 flex items-center justify-center text-gray-500 font-bold">F</div>
+<span class="font-medium text-text-main dark:text-white">Flora &amp; Co</span>
+</td>
+<td class="px-8 py-5 text-sm opacity-80 text-text-muted">Decoração</td>
+<td class="px-8 py-5 text-center">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-gray-200 text-gray-600 border border-gray-300/50">Em Revisão</span>
+</td>
+<td class="px-8 py-5 text-right font-mono font-medium text-text-main dark:text-white">$2,100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<footer class="max-w-7xl mx-auto p-8 text-center text-sm opacity-50 mt-12 pb-20 text-text-main dark:text-white">
+<p>© 2024 Sarah &amp; James Wedding Planner. Feito com amor.</p>
+</footer>
+</body></html>
