@@ -67,25 +67,7 @@ Este projeto é uma **SPA (Single Page Application)** focada em experiência do 
 
 4.  Acesse em: `http://localhost:5173`
 
-## 📚 Estrutura do Projeto
-
-```
-src/
-├── components/     # Componentes Vue reutilizáveis (Dashboard, Layout, Common)
-├── views/          # Páginas da aplicação (DashboardView, GuestListView)
-├── router/         # Configuração de rotas
-├── assets/         # Imagens e estilos globais
-└── App.vue         # Componente raiz
-```
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
-
-## 📄 Licença
-
-
-## 📱 Acesso Mobile / Rede Local
+## 📱 Acesso Rede Local
 
 Para acessar o projeto pelo seu celular ou outro computador na mesma rede Wi-Fi:
 
@@ -103,3 +85,19 @@ Para acessar o projeto pelo seu celular ou outro computador na mesma rede Wi-Fi:
 
 > **Nota**: Certifique-se de que o Firewall do Windows permita a conexão (selecione "Redes Privadas" se solicitado).
 
+## 📚 Estrutura do Projeto
+
+```
+src/
+├── components/     # Componentes Vue reutilizáveis (Dashboard, Layout, Common)
+├── views/          # Páginas da aplicação (DashboardView, GuestListView)
+├── router/         # Configuração de rotas
+├── assets/         # Imagens e estilos globais
+└── App.vue         # Componente raiz
+```
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
+
+## 📄 Licença
