@@ -1,38 +1,87 @@
-# temp_vue_project
+# Wedding Planner 💍
 
-This template should help get you started developing with Vue 3 in Vite.
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Recommended IDE Setup
+Aplicação moderna para planejamento de casamentos, oferecendo um dashboard intuitivo para gestão de convidados, orçamentos e cronogramas. O sistema simplifica a organização do grande dia com uma interface elegante e funcional.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Dashboard Preview](docs/images/dashboard-screenshot.jpg)
 
-## Recommended Browser Setup
+## 🚀 Visão Geral e Arquitetura
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Este projeto é uma **SPA (Single Page Application)** focada em experiência do usuário e design responsivo:
 
-## Customize configuration
+- **Frontend**: Construído com **Vue 3 (Composition API)** e **Vite**, garantindo alta performance e desenvolvimento ágil.
+- **Estilização**: Utiliza **Tailwind CSS** com uma paleta de cores personalizada (Sage Green & Lavender) e componentes inspirados no **Material Design 3**.
+- **Roteamento**: Navegação fluida via **Vue Router**.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ Funcionalidades Detalhadas
 
-## Project Setup
+### 📊 Dashboard Interativo
+- **Resumo Geral**: Visualização rápida de estatísticas de convidados (Total vs Confirmados).
+- **Widgets Dinâmicos**: Cards de "Próximos Eventos" e "Prioridades da Semana" com navegação em abas.
+- **Ações Rápidas**: Botões de acesso direto para adicionar despesas, eventos e convidados.
+- **Contagem Regressiva**: Hero section com contador para o dia do casamento.
 
-```sh
-npm install
+### 👥 Gestão de Convidados
+- **Lista Completa**: Visualização de todos os convidados com status de confirmação (RSVP).
+- **Categorização**: Filtros visuais por grupos (Família, Amigos, Trabalho) e dietas.
+- **Estatísticas**: Gráficos circulares de confirmação de presença.
+
+### 🎨 Design System
+- **Paleta Harmoniosa**: Tons de Sage Green, Lavanda e Terracota para uma estética sofisticada.
+- **Componentes Reutilizáveis**: Cards, Chips de Status, Botões e Modais padronizados.
+- **Responsividade**: Layout adaptável para desktop e mobile.
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **Framework**: Vue.js 3.5+
+- **Build Tool**: Vite
+- **CSS Framework**: Tailwind CSS 3.4
+- **Router**: Vue Router 4
+- **Ícones**: Google Material Symbols
+
+## 📦 Instalação e Configuração
+
+### Pré-requisitos
+- Node.js (LTS) & NPM
+
+### Passo a Passo
+
+1.  **Clone o repositório**:
+    ```bash
+    git clone https://github.com/SEU_USUARIO/wedding-planner.git
+    cd wedding-planner
+    ```
+
+2.  **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+
+3.  **Execute a aplicação**:
+    ```bash
+    npm run dev
+    ```
+
+4.  Acesse em: `http://localhost:5173`
+
+## 📚 Estrutura do Projeto
+
+```
+src/
+├── components/     # Componentes Vue reutilizáveis (Dashboard, Layout, Common)
+├── views/          # Páginas da aplicação (DashboardView, GuestListView)
+├── router/         # Configuração de rotas
+├── assets/         # Imagens e estilos globais
+└── App.vue         # Componente raiz
 ```
 
-### Compile and Hot-Reload for Development
+## 🤝 Contribuição
 
-```sh
-npm run dev
-```
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
 
-### Compile and Minify for Production
+## 📄 Licença
 
-```sh
-npm run build
-```
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

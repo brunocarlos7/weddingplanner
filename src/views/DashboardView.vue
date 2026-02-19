@@ -6,6 +6,7 @@ import ActionButtons from '../components/dashboard/ActionButtons.vue'
 import GuestStats from '../components/dashboard/GuestStats.vue'
 import BudgetStats from '../components/dashboard/BudgetStats.vue'
 import VendorList from '../components/dashboard/VendorList.vue'
+import DashboardSummaryCard from '../components/dashboard/DashboardSummaryCard.vue'
 </script>
 
 <template>
@@ -14,10 +15,15 @@ import VendorList from '../components/dashboard/VendorList.vue'
     <main class="max-w-7xl mx-auto p-4 md:p-8 space-y-8">
       <HeroSection />
       <ActionButtons />
+      
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <GuestStats />
         <BudgetStats />
       </div>
+
+      <!-- Widgets Summary Card -->
+      <DashboardSummaryCard />
+
       <VendorList />
     </main>
     <TheFooter />
