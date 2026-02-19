@@ -51,7 +51,7 @@ Este projeto é uma **SPA (Single Page Application)** focada em experiência do 
 
 1.  **Clone o repositório**:
     ```bash
-    git clone https://github.com/SEU_USUARIO/wedding-planner.git
+    git clone https://github.com/brunocarlos7/wedding-planner.git
     cd wedding-planner
     ```
 
