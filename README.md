@@ -84,4 +84,22 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📱 Acesso Mobile / Rede Local
+
+Para acessar o projeto pelo seu celular ou outro computador na mesma rede Wi-Fi:
+
+1.  **Descubra seu IP Local**:
+    - No terminal, execute `ipconfig` (Windows) e procure por `IPv4 Address` (ex: `192.168.1.5`).
+
+2.  **Execute o comando de host**:
+    ```bash
+    npm run dev:host
+    ```
+
+3.  **Acesse no dispositivo**:
+    - Abra o navegador do celular e digite: `http://SEU_IP_LOCAL:5173`
+    - Exemplo: `http://192.168.1.5:5173`
+
+> **Nota**: Certifique-se de que o Firewall do Windows permita a conexão (selecione "Redes Privadas" se solicitado).
+
